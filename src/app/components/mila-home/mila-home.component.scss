@@ -1,0 +1,187 @@
+@import "../../../assets/colors.scss";
+
+:host {
+  height: 713px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Montserrat, Arial, sans-serif;
+  padding: 109px 105px 0 85px;
+}
+.imgSmallAnimate {
+  width: 108px;
+  height: 108px;
+}
+
+.home-section {
+  background-color: $blue;
+  border-radius: 70px;
+  display: flex;
+  height: 604px;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 65px;
+}
+
+.left {
+  width: 50%;
+  padding: 34px 0 0 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right {
+  width: 50%;
+  padding: 10px 250px 0 60px;
+}
+
+.title {
+  color: $white;
+  font-size: 48px;
+  font-family: "Montserrat", Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.item {
+  color: $white;
+  font-size: 20px;
+  font-family: "Montserrat", Arial, sans-serif;
+  line-height: 1.25;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.img-animate {
+  margin-top: -3px; //подозреваю что это не правильно, но не нашла как правильно сделать
+  box-sizing: border-box;
+  width: 163px;
+  height: 163px;
+  overflow: hidden;
+}
+
+.animate-1 {
+  animation-name: img-up;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 1ms;
+}
+.animate-2 {
+  animation-name: img-up;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 30ms;
+}
+.animate-3 {
+  animation-name: img-up;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 60ms;
+}
+.animate-4 {
+  animation-name: img-up;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 90ms;
+}
+.animate-5 {
+  animation-name: img-up;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 100ms;
+}
+.animate-6 {
+  animation-name: img-up;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 120ms;
+}
+
+.img-animate-radius {
+  border-radius: 25px;
+}
+
+@keyframes img-up {
+  from {
+    margin-top: 150px;
+    visibility: hidden;
+  }
+  to {
+    margin-top: -10px;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 430px) {
+  :host {
+    height: 930px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Montserrat, Arial, sans-serif;
+    padding: 90px 25px 0px 15px;
+    box-sizing: content-box;
+  }
+  .imgSmallAnimate {
+    width: 99px;
+    height: 99px;
+  }
+
+  .home-section {
+    border-radius: 24px;
+    display: flex;
+    height: 818px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px;
+    margin-top: 50px;
+  }
+
+  .left {
+    width: 100%;
+    padding: 30px 0 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .right {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    color: $white;
+    font-size: 29px;
+    line-height: 44px;
+    font-weight: 700;
+    padding-left: 40px;
+    padding-right: 30px;
+    text-align: left;
+  }
+
+  .items {
+    margin-left: 20px;
+    margin-right: 60px;
+  }
+
+  .item {
+    color: $white;
+    font-size: 18px;
+    font-family: "Montserrat", Arial, sans-serif;
+    line-height: 28px;
+    padding-bottom: 20px;
+  }
+
+  .img-animate {
+    width: 99px;
+    height: 99px;
+  }
+}

@@ -1,0 +1,77 @@
+@import "../../../assets/colors.scss";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Montserrat, Arial, sans-serif;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+
+.title-block {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0 0 15px 380px;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Montserrat", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+.title {
+  color: $gray;
+  font-size: 70px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.title-akcent {
+  align-items: center;
+  text-align: center center;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  border: 1px solid $gray;
+  padding: 7px;
+  margin-left: 10px;
+}
+
+.rewiews-video {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 150px;
+}
+
+.video-item {
+  padding: 0px 5px 0px 5px;
+}
+
+.video-rewiew {
+  width: 200px;
+  height: 357px;
+}
+
+.text-rewiews {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.text-rewiew-item {
+  width: 560px;
+  height: 360px;
+}
+
+.text-rewiew {
+  width: 500px;
+  height: 300px;
+}

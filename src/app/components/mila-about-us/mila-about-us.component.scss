@@ -1,0 +1,163 @@
+@import "../../../assets/colors.scss";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Montserrat, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.title-block {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0 15px 380px;
+  font-size: 16px;
+  font-family: "Montserrat", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  animation-name: text-visible;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 5s;
+}
+
+.title {
+  color: $gray;
+  font-size: 70px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.title-akcent {
+  align-items: center;
+  text-align: center center;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  border: 1px solid $gray;
+  padding: 7px;
+  margin-left: 10px;
+}
+
+.subtitle {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 0 60px 380px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 85px;
+}
+
+.card-item {
+  padding-right: 30px;
+  width: 360px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat";
+}
+
+.card-image {
+  width: 209px;
+  height: 209px;
+  padding-bottom: 20px;
+}
+
+.card-text {
+  text-align: center;
+  animation-name: text-up;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 5s;
+}
+
+@keyframes text-up {
+  from {
+    margin-top: 150px;
+    visibility: hidden;
+  }
+  to {
+    margin-top: -10px;
+    visibility: visible;
+  }
+}
+
+@keyframes text-visible {
+  from {
+    margin-top: 10px;
+    visibility: hidden;
+  }
+  to {
+    margin-top: 0px;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 430px) {
+  :host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Montserrat, Arial, sans-serif;
+    box-sizing: border-box;
+  }
+
+  .title-block {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 15px 38px;
+    padding-top: 100px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 43px;
+  }
+
+  .subtitle {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 38px 40px 38px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 85px;
+  }
+
+  .card-item {
+    padding-right: 38px;
+    padding-left: 38px;
+    width: 360px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px 0 40px 0;
+  }
+
+  .card-image {
+    width: 186px;
+    height: 186px;
+  }
+}

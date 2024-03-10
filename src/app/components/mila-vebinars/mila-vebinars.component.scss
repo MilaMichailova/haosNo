@@ -1,0 +1,176 @@
+@import "../../../assets/colors.scss";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Montserrat, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.title-block {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0 0 15px 370px;
+}
+
+.title {
+  color: $gray;
+  font-size: 70px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.vebinars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 370px 70px 370px;
+}
+
+.vebinar-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.vebinar-date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #26c3f7;
+  font-size: 16px;
+  font-family: "Montserrat", Arial, sans-serif;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.vebinar-time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: $blue;
+  font-size: 16px;
+  font-family: "Montserrat", Arial, sans-serif;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.time-date {
+  animation-name: slide-text;
+  animation-duration: 400ms;
+  animation-timing-function: linear;
+  animation-delay: 1ms;
+}
+
+.vebinar-ikon {
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+}
+
+.vebinar-info {
+  border-top: 1px solid $blue;
+  border-bottom: 1px solid $blue;
+  padding: 20px 0;
+  font-size: 20px;
+  color: $black;
+  font-weight: 700;
+  font-family: "Montserrat";
+  line-height: 1.35;
+  cursor: pointer;
+  max-width: 460px;
+}
+
+.vebinar-button {
+  cursor: pointer;
+}
+
+@keyframes slide-text {
+  from {
+    padding-left: 150px;
+    visibility: hidden;
+  }
+  to {
+    padding-left: -10px;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 430px) {
+  .title-block {
+    padding: 0 40px 15px 40px;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .vebinars {
+    padding: 0 40px 70px 40px;
+  }
+
+  .vebinar-item {
+    flex-direction: column;
+  }
+
+  .vebinar-date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 600;
+  }
+
+  .vebinar-time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: $blue;
+    font-size: 15px;
+    font-family: "Montserrat", Arial, sans-serif;
+    line-height: 15px;
+    font-weight: 600;
+  }
+
+  .time-date {
+    animation-name: slide-text;
+    animation-duration: 400ms;
+    animation-timing-function: linear;
+    animation-delay: 1ms;
+  }
+
+  .vebinar-ikon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  .vebinar-info {
+    border-top: 1px solid $blue;
+    border-bottom: 1px solid $blue;
+    padding: 20px 0;
+    font-size: 20px;
+    color: $black;
+    font-weight: 700;
+    font-family: "Montserrat";
+    line-height: 1.35;
+    cursor: pointer;
+    max-width: 460px;
+  }
+
+  .vebinar-button {
+    cursor: pointer;
+  }
+}

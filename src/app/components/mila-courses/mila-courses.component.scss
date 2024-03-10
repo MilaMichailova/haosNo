@@ -1,0 +1,134 @@
+@import "../../../assets/colors.scss";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Montserrat, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.title-block {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-left: 380px;
+  justify-content: flex-start;
+}
+
+.title {
+  color: $gray;
+  font-size: 70px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.card {
+  width: 360px;
+  height: 510px;
+  padding-right: 20px;
+}
+
+.card-item {
+  width: 360px;
+  height: 360px;
+  position: relative;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: "Montserrat";
+}
+
+.overlay {
+  position: absolute;
+  z-index: 100;
+  background: $transparent_dark_Gray;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.card-organise {
+  background-image: url(../../../assets/images/organaiserscards.jpeg);
+  background-position: center;
+  background-size: contain;
+}
+
+.card-profi {
+  background-image: url(../../../assets/images/bisnescard.jpg);
+  background-position: center;
+  background-size: contain;
+}
+.card-club {
+  background-image: url(../../../assets/images/clubcard.jpg);
+  background-position: center;
+  background-size: contain;
+}
+
+.card-title {
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.7;
+  color: $white;
+  font-weight: 700;
+  z-index: 200;
+  padding-bottom: 50px;
+}
+
+.card-price {
+  font-size: 36px;
+  font-weight: 700;
+  color: $white;
+  line-height: 1.55;
+  text-align: left;
+  padding: 30px 0 60px;
+  border-top: 0.5px solid $white;
+  z-index: 200;
+}
+
+@media (max-width: 430px) {
+  .title-block {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 38px;
+    justify-content: flex-start;
+  }
+
+  .title {
+    color: $gray;
+    font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 40px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+
+  .card {
+    width: 360px;
+    height: 500px;
+    padding-right: 0px;
+  }
+
+  .card-item {
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+}

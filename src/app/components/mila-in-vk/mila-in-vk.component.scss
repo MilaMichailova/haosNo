@@ -1,0 +1,74 @@
+@import "../../../assets/colors.scss";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Montserrat, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.title-block {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0 15px 380px;
+  font-size: 16px;
+  font-family: "Montserrat", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+}
+
+.title {
+  color: $gray;
+  font-size: 70px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.subtitle {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 0 60px 380px;
+  font-size: 20px;
+  font-family: "Montserrat", Arial, sans-serif;
+  line-height: 31px;
+  font-weight: 400;
+  padding-bottom: 70px;
+}
+
+.images-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-bottom: 120px;
+}
+
+.img-item {
+  width: 237px;
+  height: 237px;
+  cursor: pointer;
+  animation-name: img-up;
+  animation-duration: 400ms;
+  animation-timing-function: linear;
+  animation-delay: 1ms;
+}
+
+@keyframes img-up {
+  from {
+    padding-top: 150px;
+    visibility: hidden;
+  }
+  to {
+    padding-top: 0px;
+    visibility: visible;
+  }
+}
