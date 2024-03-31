@@ -31,3 +31,24 @@
   line-height: 40px;
   text-align: center;
 }
+
+.btn-wrapper {
+  ::ng-deep mila-button button {
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 240px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .kviz-item {
+    width: 420px;
+    height: 290px;
+    padding: 20px 20px 65px 20px;
+  }
+
+  .title {
+    padding-bottom: 40px;
+  }
+}

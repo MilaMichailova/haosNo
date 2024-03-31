@@ -15,6 +15,8 @@ import { MilaKvizComponent } from './components/mila-kviz/mila-kviz.component';
 import { MilaFaqComponent } from './components/mila-faq/mila-faq.component';
 import { MilaFooterComponent } from './components/mila-footer/mila-footer.component';
 import { MilaFindASpecialistComponent } from './components/mila-find-a-specialist/mila-find-a-specialist.component';
+import { MilaCallbackFormComponent } from './components/mila-callback-form/mila-callback-form.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-root',
@@ -38,6 +40,8 @@ import { MilaFindASpecialistComponent } from './components/mila-find-a-specialis
     MilaFaqComponent,
     MilaFooterComponent,
     MilaFindASpecialistComponent,
+    MilaCallbackFormComponent,
+    MatButtonModule,
   ],
 })
 export class AppComponent {

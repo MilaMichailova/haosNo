@@ -1,4 +1,4 @@
-<div class="title-block">
+<div class="title-block" id="courses">
   <h1 class="title" id="courses">Курсы</h1>
 </div>
 <div class="cards">
@@ -8,7 +8,7 @@
       <div class="card-title">Организуй свой дом</div>
       <div class="card-price">от 1799 ₽</div>
     </div>
-    <mila-button></mila-button>
+    <mila-button (click)="openDialog()">Подробнее</mila-button>
   </div>
 
   <div class="card">
@@ -17,7 +17,7 @@
       <div class="card-title">Станьте профессионалом</div>
       <div class="card-price">от 37 900</div>
     </div>
-    <mila-button></mila-button>
+    <mila-button (click)="openDialog()">Подробнее</mila-button>
   </div>
 
   <div class="card">
@@ -26,23 +26,6 @@
       <div class="card-title">Вступай в сообщество влюбленных в ОП</div>
       <div class="card-price">от 1599 ₽</div>
     </div>
-    <mila-button></mila-button>
+    <mila-button (click)="openDialog()">Подробнее</mila-button>
   </div>
 </div>
-<!-- 
-<div class="section-graduates">
-  <div class="left">
-    <h3 class="subtitle">
-      Не готовы пока обучаться, но порядка в доме хочется?
-    </h3>
-    <p class="primary-text">Можете обратиться к нашим выпускникам!</p>
-    <mila-button></mila-button>
-  </div>
-  <div class="right">
-    <img
-      class="photo-graduates"
-      src="../../assets/images/stydentsProffi.png"
-      alt="our graduates"
-    />
-  </div>
-</div> -->
