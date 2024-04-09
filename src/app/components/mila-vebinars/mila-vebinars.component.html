@@ -1,11 +1,11 @@
-<div class="title-block">
+<div class="title-block" id="vebinars">
   <h1 class="title">Бесплатные мероприятия</h1>
 </div>
 <div class="vebinars">
   <div class="vebinar-item">
     <div class="vebinar-date">
       <img
-        class="vebinar-ikon"
+        class="vebinar-icon"
         src="../../../assets/images/calendar.png"
         alt="calendar"
       />
@@ -13,7 +13,7 @@
     </div>
     <div class="vebinar-time">
       <img
-        class="vebinar-ikon"
+        class="vebinar-icon"
         src="../../../assets/images/clock.png"
         alt="calendar"
       />
@@ -22,23 +22,16 @@
     <div class="vebinar-info">
       Экспресс-вебинар «Удобный дом или новая профессия благодаря организации
       пространства
-      <!-- <mat-expansion-panel hideToggle>
-        <mat-expansion-panel-header>
-          <mat-panel-title> This is the expansion title </mat-panel-title>
-          <mat-panel-description>
-            This is a summary of the content
-          </mat-panel-description>
-        </mat-expansion-panel-header>
-        <p>This is the primary content of the panel.</p>
-      </mat-expansion-panel> -->
     </div>
-    <div class="vebinar-button"><mila-button></mila-button></div>
+    <div class="vebinar-button">
+      <mila-button (click)="openDialog()">Участвовать</mila-button>
+    </div>
   </div>
 
   <div class="vebinar-item">
     <div class="vebinar-date">
       <img
-        class="vebinar-ikon"
+        class="vebinar-icon"
         src="../../../assets/images/calendar.png"
         alt="calendar"
       />
@@ -46,7 +39,7 @@
     </div>
     <div class="vebinar-time">
       <img
-        class="vebinar-ikon"
+        class="vebinar-icon"
         src="../../../assets/images/clock.png"
         alt="calendar"
       />
@@ -55,13 +48,15 @@
     <div class="vebinar-info">
       Как создается умная мебель: от идеи до реализации
     </div>
-    <div class="vebinar-button"><mila-button></mila-button></div>
+    <div class="vebinar-button">
+      <mila-button (click)="openDialog()">Участвовать</mila-button>
+    </div>
   </div>
 
   <div class="vebinar-item">
     <div class="vebinar-date">
       <img
-        class="vebinar-ikon"
+        class="vebinar-icon"
         src="../../../assets/images/calendar.png"
         alt="calendar"
       />
@@ -69,7 +64,7 @@
     </div>
     <div class="vebinar-time">
       <img
-        class="vebinar-ikon"
+        class="vebinar-icon"
         src="../../../assets/images/clock.png"
         alt="calendar"
       />
@@ -79,6 +74,8 @@
       Как освоить творческую женскую профессию организатора пространства с
       доходом от 60 000 руб/мес, даже если сейчас у вас дома беспорядок
     </div>
-    <div class="vebinar-button"><mila-button></mila-button></div>
+    <div class="vebinar-button">
+      <mila-button (click)="openDialog()">Участвовать</mila-button>
+    </div>
   </div>
 </div>

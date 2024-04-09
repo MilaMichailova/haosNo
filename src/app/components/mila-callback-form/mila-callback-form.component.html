@@ -1,0 +1,71 @@
+<button class="button-close" (click)="closeDialog()">X</button>
+<form class="form" [formGroup]="milaCallbackForm">
+  <h1 class="title">Мы свяжемся с Вами в ближайшее время</h1>
+  <input
+    type="text"
+    placeholder="Ваше имя"
+    class="input-text"
+    formControlName="userName"
+  />
+  @if(milaCallbackForm.controls["userName"].invalid &&
+  milaCallbackForm.controls["userName"].touched){
+  <div class="alert">Не указано имя</div>
+  }
+  <input
+    type="phone"
+    placeholder="Ваш номер телефона"
+    class="input-text"
+    formControlName="userPhone"
+  />
+  @if(milaCallbackForm.controls["userPhone"].invalid &&
+  milaCallbackForm.controls["userPhone"].touched){
+  <div class="alert">Некорректный номер телефона</div>
+  }
+  <button
+    mat-raised-button
+    [disabled]="milaCallbackForm.invalid"
+    (click)="saveUser()"
+  >
+    Заказать обратный звонок
+  </button>
+  <div class="checkboxes">
+    <label for="checkbox-privacy-policy" class="checkbox-lable"
+      ><input
+        type="checkbox"
+        id="checkbox-privacy-policy"
+        class="checkbox-input"
+        formControlName="checkboxPrivacyPolicy"
+      />
+      Я даю свое согласие на обработку персональных данных в соответствии с
+      Политикой конфиденциальности</label
+    >
+    @if(milaCallbackForm.controls["checkboxPrivacyPolicy"].invalid &&
+    milaCallbackForm.controls["checkboxPrivacyPolicy"].touched){
+    <div class="alert">Это согласие обязательно</div>
+    }
+
+    <label for="checkbox-advertising" class="checkbox-lable"
+      ><input
+        type="checkbox"
+        id="checkbox-advertising"
+        class="checkbox-input"
+        formControlName="checkboxAdvertising"
+      />
+      Я даю свое согласие на получение рассылки и рекламных материалов</label
+    >
+
+    <label for="checkbox-contract-offer" class="checkbox-lable"
+      ><input
+        type="checkbox"
+        id="checkbox-contract-offer"
+        class="checkbox-input"
+        formControlName="checkboxContractOffer"
+      />
+      Я ознакомился (-лась) и принимаю договор оферты</label
+    >
+    @if(milaCallbackForm.controls["checkboxContractOffer"].invalid &&
+    milaCallbackForm.controls["checkboxContractOffer"].touched){
+    <div class="alert">Ознакомьтесь с договором оферты</div>
+    }
+  </div>
+</form>

@@ -1,4 +1,4 @@
-<div class="certificate-section">
+<div class="certificate-section" id="certificate">
   <div class="info">
     <div class="title">
       ПОДАРИТЕ СВОИМ БЛИЗКИМ ПОЛЕЗНЫЙ ПОДАРОК —
@@ -11,7 +11,10 @@
       Сертификат можно активировать в течение полугода, он действует на все
       продукты Школы
     </div>
-    <mila-button></mila-button>
+
+    <div class="btn-wrapper">
+      <mila-button (click)="openDialog()">Оформить сертификат</mila-button>
+    </div>
   </div>
 
   <img class="img-gift" src="../../../assets/images/gift.png" alt="gift" />

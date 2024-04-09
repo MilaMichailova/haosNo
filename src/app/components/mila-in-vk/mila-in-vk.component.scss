@@ -72,3 +72,58 @@
     visibility: visible;
   }
 }
+
+@media (max-width: 430px) {
+  :host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .title-block {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 15px 40px;
+    font-size: 18px;
+    font-family: "Montserrat", Arial, sans-serif;
+    line-height: 47px;
+    font-weight: 400;
+    padding-top: 100px;
+    width: 215px;
+  }
+
+  .title {
+    color: $gray;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    padding: 0 20px 15px 40px;
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .images-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 376px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-bottom: 120px;
+    padding-left: 40px;
+  }
+
+  .img-item {
+    width: 165px;
+    height: 165px;
+    cursor: pointer;
+    animation-name: img-up;
+    animation-duration: 400ms;
+    animation-timing-function: linear;
+    animation-delay: 1ms;
+  }
+}

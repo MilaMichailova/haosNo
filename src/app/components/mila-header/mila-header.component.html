@@ -1,13 +1,23 @@
 <img class="logo" src="../../assets/images/logo.png" alt="logo" />
-<div id="home" class="menu-navigation">
+<div class="menu-navigation">
   <ul class="menu-list">
-    <li class="menu-item"><a href="#" class="menu-item-href">Курсы</a></li>
-    <li class="menu-item"><a href="#" class="menu-item-href">Почему мы</a></li>
-    <li class="menu-item"><a href="#" class="menu-item-href">Вебинары</a></li>
-    <li class="menu-item"><a href="#" class="menu-item-href">Отзывы</a></li>
-    <li class="menu-item"><a href="#" class="menu-item-href">Статьи</a></li>
     <li class="menu-item">
-      <a href="#" class="menu-item-href">Найти специалиста</a>
+      <a href="#courses" class="menu-item-href">Курсы</a>
+    </li>
+    <li class="menu-item">
+      <a href="#about-us" class="menu-item-href">Почему мы</a>
+    </li>
+    <li class="menu-item">
+      <a href="#vebinars" class="menu-item-href">Вебинары</a>
+    </li>
+    <li class="menu-item">
+      <a href="#reviews" class="menu-item-href">Отзывы</a>
+    </li>
+    <li class="menu-item">
+      <a href="#articles" class="menu-item-href">Статьи</a>
+    </li>
+    <li class="menu-item">
+      <a href="#find-a-specialist" class="menu-item-href">Найти специалиста</a>
     </li>
   </ul>
 </div>
@@ -15,39 +25,58 @@
   <span class="phone">+7 999 999 9999</span>
   <button class="social-link-btn">
     <img
-      class="social-link-ikon"
+      class="social-link-icon"
       src="../../../assets/images/icons8-vk.svg"
       alt="vk"
     />
   </button>
   <button class="social-link-btn" class="social-link-btn">
     <img
-      class="social-link-ikon"
+      class="social-link-icon"
       src="../../../assets/images/icons8-telegram.svg"
       alt="telegram"
     />
   </button>
   <button class="social-link-btn">
     <img
-      class="social-link-ikon"
+      class="social-link-icon"
       src="../../../assets/images/icons8-whatsapp.svg"
       alt="watsApp"
     />
   </button>
   <button class="social-link-btn">
     <img
-      class="social-link-ikon"
+      class="social-link-icon"
       src="../../../assets/images/icons8-yandex.svg"
       alt="yandex Dzen"
     />
   </button>
-  <div class="drop-down-menu">
-    <button class="drop-down-menu-btn"></button>
-    <a href="#courses" class="active">Курсы</a>
-    <a href="#">Почему мы</a>
-    <a href="#">Вебинары</a>
-    <a href="#">Отзывы</a>
-    <a href="#">Статьи</a>
-    <a href="#home">В начало страницы</a>
-  </div>
 </div>
+
+<button mat-button [matMenuTriggerFor]="menu" class="drop-down-menu">
+  <img
+    class="menu-icon"
+    src="../../../assets/images/menu-mobile.svg"
+    alt="menu"
+  />
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <a href="#courses" class="menu-item-href">Курсы</a>
+  </button>
+  <button mat-menu-item>
+    <a href="#about-us" class="menu-item-href">Почему мы</a>
+  </button>
+  <button mat-menu-item>
+    <a href="#vebinars" class="menu-item-href">Вебинары</a>
+  </button>
+  <button mat-menu-item>
+    <a href="#reviews" class="menu-item-href">Отзывы</a>
+  </button>
+  <button mat-menu-item>
+    <a href="#articles" class="menu-item-href">Статьи</a>
+  </button>
+  <button mat-menu-item>
+    <a href="#home" class="menu-item-href">В начало страницы</a>
+  </button>
+</mat-menu>
