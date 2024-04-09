@@ -60,9 +60,10 @@
     line-height: 1.55;
     font-weight: 600;
     width: 330px;
-  }
-  ::ng-deep mila-button button:hover {
-    background-color: $yellow;
+
+    & :hover {
+      background-color: $yellow;
+    }
   }
 }
 

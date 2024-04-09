@@ -46,12 +46,7 @@ export class MilaCallbackFormComponent {
   ]);
 
   milaCallbackForm: FormGroup = new FormGroup({
-    // userName: new FormControl('', Validators.required),
     userName: this.userName,
-    // userPhone: new FormControl('', [
-    //   Validators.pattern('[0-9]{11}'),
-    //   Validators.required,
-    // ]),
     userPhone: this.userPhone,
     checkboxPrivacyPolicy: new FormControl('', Validators.requiredTrue),
     checkboxAdvertising: new FormControl(''),
@@ -69,10 +64,6 @@ export class MilaCallbackFormComponent {
     this.closeDialog();
     this.successfulSubmission();
   }
-
-  // private createNewUser(): IStorageUser {
-  //   return { id: uuid(), name: 'hhh', phone: 89000000000 } as IStorageUser;
-  // }
 
   public openDialogSucsuccessful(): void {
     this.dialog
